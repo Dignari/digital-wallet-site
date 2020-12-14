@@ -4,3 +4,7 @@
 
 layout: home
 ---
+
+<section markdown="1" class="grid-container">
+this is a test
+</section>
