@@ -41,7 +41,7 @@ const PROJECT_SASS_SRC = "./_sass";
 const IMG_DEST = "./assets/img";
 
 // Fonts destination
-const FONTS_DEST = "./assets/font";
+const FONTS_DEST = "./assets/fonts";
 
 // Javascript destination
 const JS_DEST = "./assets/js";
