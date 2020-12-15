@@ -22,7 +22,7 @@ title: Dignari Digital Wallet Design System
 email: jeff.stephens@dignari.com
 description: >- # this means to ignore newlines until "baseurl:"
   Welcome to the Dignari digital wallet design system website.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/digital-wallet-site" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jeffdstephens
 github_username: jeff-stephens-dignari
