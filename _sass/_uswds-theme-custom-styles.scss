@@ -19,3 +19,18 @@ i.e.
 @include u-padding-right('05');
 ----------------------------------------
 */
+
+/* Added background styling to header area */
+header {
+  @include u-bg("base-lighter");
+}
+
+/* Added custom styling to take up half of the available space
+when the screen is over a certain size. This allows longer text
+like "dignari digital wallet design system" to fit without 
+wrapping */
+@media (min-width: 64em) {
+  .usa-navbar {
+    min-width: 32rem;
+  }
+}

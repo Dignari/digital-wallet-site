@@ -3,18 +3,78 @@
 
   {%- include head.html -%}
 
+  <!--- This ection is for the header -->
+<div class="usa-overlay"></div>
+
+<header class="usa-header usa-header--basic">
+  <div class="usa-nav-container">
+    <div class="usa-navbar">
+  <div class="usa-logo" id="basic-logo">
+    <em class="usa-logo__text"><a href="/" title="Home" aria-label="Home">{{site.title}}</a></em>
+  </div>
+  <button class="usa-menu-btn">Menu</button>
+</div>
+
+<nav aria-label="Primary navigation" class="usa-nav">
+      <button class="usa-nav__close"><img src="/assets/img/close.svg" role="img" alt="close"></button>
+<ul class="usa-nav__primary usa-accordion"><li class="usa-nav__primary-item">  
+    <a class="usa-nav__link" href="https://www.dignari.com" target="_blank"><span>visit us @ dignari.com</span></a>
+</form>
+</nav>
+  </div>
+</header>
+
+
   <body>
-
-    {%- include header.html -%}
-
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
         {{ content }}
       </div>
     </main>
-
-    {%- include footer.html -%}
     <script src="{{ "/assets/js/uswds.min.js" | relative_url }}"></script>
   </body>
+
+  <!-- This section is for the footer -->
+  <footer class="usa-footer usa-footer--slim">
+    <div class="grid-container usa-footer__return-to-top">
+      <a href="#">Return to top</a>
+    </div>
+    <div class="usa-footer__primary-section">
+      <div class="usa-footer__primary-container grid-row">
+        <div class="mobile-lg:grid-col-8">
+          
+        </div>
+        <div class="mobile-lg:grid-col-4">
+          <address class="usa-footer__address">
+            <div class="grid-row grid-gap">
+              <div class="grid-col-auto mobile-lg:grid-col-12 desktop:grid-col-auto">
+                <div class="usa-footer__contact-info">
+                  
+                </div>
+              </div>
+              <div class="grid-col-auto mobile-lg:grid-col-12 desktop:grid-col-auto">
+                
+              </div>
+            </div>
+          </address>
+        </div>
+      </div>
+    </div>
+    <div class="usa-footer__secondary-section">
+      <div class="grid-container">
+        <div class="usa-footer__logo grid-row grid-gap-2">
+          <div class="grid-col-auto">
+            <img class="usa-footer__logo-img" src="/assets/img/Block_Dignari_Light.png" alt="">
+          </div>
+          <div class="grid-col-auto">
+            <h3 class="usa-footer__logo-heading">Dignari</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+
 
 </html>
