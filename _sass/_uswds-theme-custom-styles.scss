@@ -25,6 +25,13 @@ header {
   @include u-bg("base-lighter");
 }
 
+/* created this section as the standard markdown rendered
+different that other styles such as the accordion. This makes 
+it consistent and uses the mixin to apply to all paragraphs */
+p {
+  @include u-line-height("sans", 4);
+}
+
 /* Added custom styling to take up half of the available space
 when the screen is over a certain size. This allows longer text
 like "dignari digital wallet design system" to fit without 
@@ -33,4 +40,23 @@ wrapping */
   .usa-navbar {
     min-width: 32rem;
   }
+}
+
+/* Added a video container for embedding a YouTube video */
+.video-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Added a responsive iframe for embedding a YouTube video */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
