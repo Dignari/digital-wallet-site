@@ -32,6 +32,10 @@ p {
   @include u-line-height("sans", 4);
 }
 
+ul {
+  @include u-line-height("sans", 4);
+}
+
 /* Added custom styling to take up half of the available space
 when the screen is over a certain size. This allows longer text
 like "dignari digital wallet design system" to fit without 
@@ -59,4 +63,10 @@ wrapping */
   right: 0;
   width: 100%;
   height: 100%;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
