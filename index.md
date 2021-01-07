@@ -5,9 +5,14 @@
 layout: home
 ---
 
-# Welcome!
-
-<p class="usa-intro">This site provides an overview of the Dignari digital wallet design system, which is a finalist in the United States Department of Homeland Security (DHS) Science and Technology (S&T) Digital Wallet Challenge.</p>
+  <section class="usa-hero margin-top-1" aria-label="Introduction">
+  <div class="grid-container">
+    <div class="usa-hero__callout">
+      <h1 class="usa-hero__heading"><span class="usa-hero__heading--alt">Welcome!</span>
+      </h1><p>This site provides an overview of the Dignari Digital Wallet Design System, which is a finalist in the United States Department of Homeland Security (DHS) Science and Technology (S&T) Digital Wallet Challenge.</p>
+    </div>
+  </div>
+</section>
 
 # Stage 2 submission
 
@@ -17,17 +22,43 @@ Since this website is serving as the main landing page for our final competition
 
 We were so energized after the Stage 1 Community Event that we got to work right away on our Stage 2 submission. Here is a brief recap of some of the things we've done in Stage 2 to further our design and to accomodate feedback from the community.
 
-- Consolidated feedback from the DHS S&T Digital Wallet Challenge Community Event and applied it to our design
-- Gathered additional information on the W3C Credential Community Group (CCG) and associated groups, communities, and working groups (e.g., DIF)
-- Compiled additional reseearch, revisited the DHS use case, reviewed our design to identify gaps and opportunities
-- Arranged to present our design at the CCG weekly meeting on 12/1/2020
-- Created a new interactive presentation, incorporating feedback from the Stage 1 Community Event and previous CCG meetings, and provided a live demo of our system at the CCG meeting to solicit feedback
-- After the meeting we provided the CCG with a copy of the designs, with focus area callouts, and a link to our Stage 1 video submission for additional review
-- Took feedback from the CCG and applied it to our final design and also added enhancements based on our independent research (e.g., lifecycle status)
-- Performed a deep dive analysis of the Verifiable Credentials Data Model 1.0 to incorporate actual data model attributes in our final design
-- Explored similar delivery models that follow open source best practices for design systems. This included reviewing the <a href="https://designsystem.digital.gov/" target="_blank">U.S. Web Design System</a> as well as international systems such as the <a href="https://designsystem.gov.au/" target="_blank">Australian Government Design System</a> to ensure consistency and interoperability
-- Established public GitHub repository to host our final design system and this website
-- Built this Jekyll website, hosted on GitHub Pages, to serve as our main landing page for our final submission and for transparent community engagement
+<div class="grid-row grid-gap margin-top-5 margin-bottom-7">
+  <div class="tablet:grid-col-6">
+      <h4 class="margin-0">Actions taken after Stage 1</h4>
+      <ul class="usa-list">
+        <li>Consolidated feedback from Community Event and applied it to our design</li>
+        <li>Gathered additional information on the W3C Credential Community Group (CCG) and associated groups (e.g., DIF)</li>
+        <li>Compiled additional reseearch, revisited the DHS use case, and reviewed our design to identify gaps and opportunities</li>
+        <li>Arranged to present our design at the CCG weekly meeting on 12/1/2020</li>
+        <li>Presented our designs and a demo at the 12/1/2020 CCG weekly meeting with an interactive presentation, incorporating feedback from the Stage 1 Community Event and previous CCG meetings, in order to solicit feedback</li>
+        <li>After the meeting we provided the CCG with a copy of the designs, with focus area callouts, and a link to our Stage 1 video submission</li>
+        <li>Applied CCG feedback to our final design and added enhancements based on our independent research (e.g., lifecycle status)</li>
+        <li>Performed a deep dive analysis of the Verifiable Credentials Data Model 1.0 to incorporate accurate data model attributes in our final design</li>
+        <li>Explored similar delivery models that follow open source best practices for design systems in order to ensure consistency and interoperability. This included reviewing the <a href="https://designsystem.digital.gov/" target="_blank">U.S. Web Design System</a> as well as international systems such as the <a href="https://designsystem.gov.au/" target="_blank">Australian Government Design System</a></li>
+        <li>Established public GitHub repository to host our final design system as well as this website</li>
+        <li>Built this Jekyll website, hosted on GitHub Pages, to serve as our main landing page for our final submission and for transparent community engagement</li>
+      </ul>
+  </div>
+  <div class="tablet:grid-col-6">
+      <h4 class="margin-0">UI/UX changes made after Stage 1</h4>
+      <ul class="usa-list">
+        <li>Updated font sizes and data entry elements to follow USWDS</li>
+        <li>Expanded account creation workflow and inclusion of EULA acceptance</li>
+        <li>Removed statuses from identity domains. It was ambiguous and could not accurately show status if multiple documents were under a particular domain</li>
+        <li>Implemented Data First concepts for credential views to the holder; show data elements and have image strictly as representative</li>
+        <li>Added acceptance requirement when receiving credential from issuers; holder has opportunity to review credential data and by accepting the credential, the holder is confirming that the data is correct</li>
+        <li>Added notifications for particular actions (e.g., when adding credentials to wallets the statuses change on documents)</li>
+        <li>Changed the Package creation view. Showing the QR code was not intuitive to the holder. Now we show a list of documents when the Package is created. When the holder clicks Share, the holder is prompted for consent to release information after which the QR Code is presented</li>
+        <li>Clarified online job application workflow. Holder would scan QR code to Send Job Application Package. Upon clicking Send, the holder is asked for consent to release information. Package is sent when consent is provided</li>
+        <li>Added ability to edit document lists inside domains to allow users to delete multiple documents (e.g., delete driver's license and PRC from Legal Identity domain)</li>
+        <li>Added statuses to credentials (e.g., Revoked or Expired showing on the document tabs) and notifications accompany highlighting of documents and printed statuses</li>
+      </ul>
+  </div>
+</div>
+
+<div>
+  <img src="{{site.baseurl}}/assets/img/dw-marketing-mobile.png" class="center margin-bottom-7" width="75%">
+</div>
 
 ## Our digital wallet design principles
 
@@ -35,7 +66,7 @@ Our design principles are aligned with the 5 principles outlined as part of the 
 
 Expand each of the sections below to learn more about our design principles.
 
-<div class="usa-accordion usa-accordion--bordered" aria-multiselectable="true">
+<div class="usa-accordion usa-accordion--bordered margin-bottom-7" aria-multiselectable="true">
       <h2 class="usa-accordion__heading">
         <button class="usa-accordion__button"
           aria-expanded="true"
@@ -120,21 +151,59 @@ Expand each of the sections below to learn more about our design principles.
         </div>
 </div>
 
-## For Designers
+## Resources and design artifacts
 
-<img src="{{site.baseurl}}/assets/img/sketch-logo.png" width="20%"/>
+Our approach throughout the competition was to look at solutions that worked for both designers and developers. Even though the focus of this competition was on the UI/UX component, we wanted to make sure that our artifacts aligned with expectations of the development community and that, even if it wasn't a complete design system at the time of judging, the framework was in position to assist developers in the future.
 
-At the heart of our design system is our Sketch file. Sketch is an industry leading digital design toolkit for UI/UX that we use regularly in our Human-Centered Design practice here at Dignari.
+<ul class="usa-card-group margin-bottom-7">
+  <li class="tablet:grid-col-4 usa-card usa-card--header-first">
+    <div class="usa-card__container">
+      <header class="usa-card__header">
+        <h2 class="usa-card__heading">For designers</h2>
+      </header>
+      <div class="usa-card__body">
+        <img src="{{site.baseurl}}/assets/img/sketch-card-logo.png" >
+        <p>At the heart of our design system is our Sketch file. Sketch is an industry leading digital design toolkit for UI/UX that we use regularly in our Human-Centered Design practice here at Dignari.</p>
+        <p> Designers interested in using our Sketch file to start their own design process may find it in our GitHub repo.</p>
+      </div>
+      <div class="usa-card__footer">
+        <a class="usa-button" href="https://github.com/Dignari/digital-wallet-ds" target="_blank">Visit Designer Repo</a>
+      </div>
+    </div>
+  </li>
+  <li class="tablet:grid-col-4 usa-card usa-card--header-first">
+    <div class="usa-card__container">
+      <header class="usa-card__header">
+        <h2 class="usa-card__heading">For developers</h2>
+      </header>
+      <div class="usa-card__body">
+        <img src="{{site.baseurl}}/assets/img/sass-card-logo.png" >
+        <p>For developers, we have included a number of <a href="https://sass-lang.com/" target="_blank">Sass</a> files in our GitHub repo to be used for bootstrapping your projects. These files are intended to be implemented into your project similar to the USWDS.</p><p> These are a work in progress and trail behind development of the UI/UX designer files (Sketch).</p>
+      </div>
+      <div class="usa-card__footer">
+        <a class="usa-button" href="https://github.com/Dignari/digital-wallet-ds" target="_blank">Visit Developer Repo</a>
+      </div>
+    </div>
+  </li>
+  <li class="tablet:grid-col-4 usa-card usa-card--header-first">
+    <div class="usa-card__container">
+      <header class="usa-card__header">
+        <h2 class="usa-card__heading">For everyone</h2>
+      </header>
+      <div class="usa-card__body">
+        <img src="{{site.baseurl}}/assets/img/zeplin-card-logo.png" >
+        <p>We have also stood up a public Zeplin site where the entire design may be viewed by any interested stakeholders.</p><p> This makes it easy for anyone to take a look at the full collection of screens to hopefully spur thoughts and design considerations for their own digital wallet designs.</p>
+      </div>
+      <div class="usa-card__footer">
+        <a class="usa-button" href="https://scene.zeplin.io/project/5fb41a91183b2377bdd3f4d0" target="_blank">Visit Zeplin Site</a>
+      </div>
+    </div>
+  </li>
+</ul>
 
-Designers interested in using our Sketch file to start their own design process may find it in our GitHub <a href="https://github.com/Dignari/digital-wallet-ds" target="_blank">digital-wallet-ds</a> repo
-
-## For Developers
-
-<img src="{{site.baseurl}}/assets/img/sass-logo.png" width="15%"/>
-
-For developers, we have included a number of <a href="https://sass-lang.com/" target="_blank">Sass</a> files in our <a href="https://github.com/Dignari/digital-wallet-ds" target="_blank">GitHub repo</a> to be used for bootstrapping your projects. These Sass files are intended to be implemented into your project similar to how USWDS design tokens and Sass files are used. These are a work in progress and trail behind development of the UI/UX designer files (Sketch).
-
----
+<div>
+  <img src="{{site.baseurl}}/assets/img/dw-marketing-ui.png" class="center">
+</div>
 
 # Competition Background
 
