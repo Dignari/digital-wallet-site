@@ -8,8 +8,8 @@ layout: home
   <section class="usa-hero margin-top-1" aria-label="Introduction">
   <div class="grid-container">
     <div class="usa-hero__callout">
-      <h1 class="usa-hero__heading"><span class="usa-hero__heading--alt">Welcome!</span>
-      </h1><p>This site provides an overview of the Dignari Digital Wallet Design System, which is a finalist in the United States Department of Homeland Security (DHS) Science and Technology (S&T) Digital Wallet Challenge.</p>
+      <h1 class="usa-hero__heading"><span class="hero-text-color">Welcome!</span>
+      </h1><p class="hero-text-color">This site provides an overview of the Dignari Digital Wallet Design System, which is a finalist in the United States Department of Homeland Security (DHS) Science and Technology (S&T) Digital Wallet Challenge.</p>
     </div>
   </div>
 </section>
@@ -20,7 +20,7 @@ Since this website is serving as the main landing page for our final competition
 
 ## We've been busy
 
-We were so energized after the Stage 1 Community Event that we got to work right away on our Stage 2 submission. Here is a brief recap of some of the things we've done in Stage 2 to further our design and to accomodate feedback from the community.
+We were so energized after the Stage 1 Community Event that we got to work right away on our Stage 2 submission. Here is a brief recap of some of the things we've done in Stage 2 to further our design and to accommodate feedback from the community.
 
 <div class="grid-row grid-gap margin-top-5 margin-bottom-7">
   <div class="tablet:grid-col-6">
@@ -28,7 +28,7 @@ We were so energized after the Stage 1 Community Event that we got to work right
       <ul class="usa-list">
         <li>Consolidated feedback from Community Event and applied it to our design</li>
         <li>Gathered additional information on the W3C Credential Community Group (CCG) and associated groups (e.g., DIF)</li>
-        <li>Compiled additional reseearch, revisited the DHS use case, and reviewed our design to identify gaps and opportunities</li>
+        <li>Compiled additional research, revisited the DHS use case, and reviewed our design to identify gaps and opportunities</li>
         <li>Arranged to present our design at the CCG weekly meeting on 12/1/2020</li>
         <li>Presented our designs and a demo at the 12/1/2020 CCG weekly meeting with an interactive presentation, incorporating feedback from the Stage 1 Community Event and previous CCG meetings, in order to solicit feedback</li>
         <li>After the meeting we provided the CCG with a copy of the designs, with focus area callouts, and a link to our Stage 1 video submission</li>
@@ -142,12 +142,7 @@ Expand each of the sections below to learn more about our design principles.
         <li>Formally presented our Stage 1 design at the <a href="https://w3c-ccg.github.io/meetings/2020-12-01/" target="_blank">12/1/2020 CCG meeting</a> in an interactive demonstration and discussion about our proposed design.</li>  
         <li>Participated in the <a href="https://www.federalblockchainnews.com/podcast/episode/79d5c394/digital-identity-wallet-ui-competition" target="_blank">Federal Blockchain News podcast</a> with our competitors to discuss the competition and our design principles.</li>
         </ul>
-        <p>Some of these features in our Stage 2 submission, which were a direct result of listening to the community, in addition to our continued research, include:</p>
-        <ul>
-        <li>Implementation and clarity of VC lifecycle status (e.g., Revoked, Expired).</li>
-        <li>Inclusion of official data model attributes during the selective disclosure process.</li>
-        <li>Feature three</li>
-        </ul>
+        <p>Features in our Stage 2 submission, which were a direct result of listening to the community, can be found in the intro to this website under "UI/UX changes made after Stage 1".</p>
         </div>
 </div>
 
@@ -167,7 +162,7 @@ Our approach throughout the competition was to look at solutions that worked for
         <p> Designers interested in using our Sketch file to start their own design process may find it in our GitHub repo.</p>
       </div>
       <div class="usa-card__footer">
-        <a class="usa-button" href="https://github.com/Dignari/digital-wallet-ds" target="_blank">Visit Designer Repo</a>
+        <a class="usa-button dw-button-color" href="https://github.com/Dignari/digital-wallet-ds" target="_blank">Visit Designer Repo</a>
       </div>
     </div>
   </li>
@@ -181,7 +176,7 @@ Our approach throughout the competition was to look at solutions that worked for
         <p>For developers, we have included a number of <a href="https://sass-lang.com/" target="_blank">Sass</a> files in our GitHub repo to be used for bootstrapping your projects. These files are intended to be implemented into your project similar to the USWDS.</p><p> These are a work in progress and trail behind development of the UI/UX designer files (Sketch).</p>
       </div>
       <div class="usa-card__footer">
-        <a class="usa-button" href="https://github.com/Dignari/digital-wallet-ds" target="_blank">Visit Developer Repo</a>
+        <a class="usa-button dw-button-color" href="https://github.com/Dignari/digital-wallet-ds" target="_blank">Visit Developer Repo</a>
       </div>
     </div>
   </li>
@@ -195,7 +190,7 @@ Our approach throughout the competition was to look at solutions that worked for
         <p>We have also stood up a public Zeplin site where the entire design may be viewed by any interested stakeholders.</p><p> This makes it easy for anyone to take a look at the full collection of screens to hopefully spur thoughts and design considerations for their own digital wallet designs.</p>
       </div>
       <div class="usa-card__footer">
-        <a class="usa-button" href="https://scene.zeplin.io/project/5fb41a91183b2377bdd3f4d0" target="_blank">Visit Zeplin Site</a>
+        <a class="usa-button dw-button-color" href="https://scene.zeplin.io/project/5fb41a91183b2377bdd3f4d0" target="_blank">Visit Zeplin Site</a>
       </div>
     </div>
   </li>
