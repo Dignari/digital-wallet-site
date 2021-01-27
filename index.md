@@ -16,7 +16,15 @@ layout: home
 
 # Stage 2 submission
 
-Since this website is serving as the main landing page for our final competition submission, we're going to cover our Stage 2 content first. Click [HERE](#competition-background) to learn more about the DHS Challenge and to see our Stage 1 submission.
+Since this website is serving as the main landing page for our final competition submission, we're going to cover our Stage 2 content first. (Click [HERE](#competition-background) to learn more about the DHS Challenge and to see our Stage 1 submission.)
+
+## Submission video
+
+Here is our official Stage 2 submission video which provides an overview of our various artifacts, a walk-through of the particular challenge use case, and a coding demo of the design system in use.
+
+<div class="video-container">
+<iframe class="responsive-iframe" src="https://player.vimeo.com/video/498558982" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</div>
 
 ## We've been busy
 
